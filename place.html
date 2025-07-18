@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Farhan Abdi Mohamud">
+    <meta name="description" content="Responsive image page using HTML, CSS, and JavaScript.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <title>WDD 131 – Dynamic Web Fundamentals – Farhan A.mohamud</title>
+</head>
+<body>
+    <header>
+        <h1>Somalia</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero.webp" media="(min-width:700px)">
+                <img src="images/hero-small.webp" alt="camel from somalia" width="400" height="200">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 637,657 sq km</li>
+                <li><strong>Population:</strong> 17,597,511</li>
+                <li><strong>Capital:</strong> Mogadishu</li>
+                <li><strong>Languages:</strong> Somali, Arabic</li>
+                <li><strong>Currency:</strong> Somali Shilling</li>
+                <li><strong>Time Zone:</strong> UTC+3</li>
+                <li><strong>Calling Code:</strong> +252</li>
+                <li><strong>Internet TLD:</strong> .so</li>
+            </ul>
+        </section>
+
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" class="weather-icon" alt="Weather icon">
+            <ul>
+              <li><strong>Temperature:</strong> <span id="temp">28</span>°C</li>
+              <li><strong>Conditions:</strong> Sunny</li>
+              <li><strong>Wind:</strong> <span id="wind">15</span>km/h</li>
+              <li><strong>Wind Chill:</strong> <span id="windChill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌹 Farhan A.mohamud 🌹 Somalia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

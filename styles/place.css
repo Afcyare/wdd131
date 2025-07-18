@@ -1,0 +1,124 @@
+:root {
+  --primary-color: #4189DD;
+  --secondary-color: #ffffff;
+  --accent-color: #f0f0f0;
+  --text-color: #333333;
+  --font: "Merriweather", sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  margin: 0;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.data, .weather {
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    padding: 0.5rem;
+}
+li strong{
+    margin-right: 0.3rem;
+}
+.weather-icon {
+  width: 40px;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+h2{
+    text-align: center;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+#lastModified {
+  color: #f5eea8;
+}
+
+
+
+@media screen and (min-width: 44rem){
+    main{
+        position: relative;
+    }
+
+    .data{
+        max-width: 300px;
+        position: absolute;
+        background: #d5d8da;
+        margin: 1rem 3rem;
+        height: auto;
+        top: 0.5rem;
+        left: -1rem;
+    }
+    .data h2, .weather h2{
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        padding: 1rem;
+        width: 100%;
+        margin-right: 3rem;
+        margin-top: 0.3rem;
+    }
+
+    .weather h2::after{
+        content: " ⛅";
+        font-size: 1.2rem;
+        margin-left: 0.5rem;
+    }
+
+    .weather{
+        max-width: 300px;
+        position: absolute;
+        position: absolute;
+        background: #d5d8da;
+        right: 1rem;
+        margin: 2rem 1rem;
+        bottom: 0.5rem;
+
+
+    }
+
+    .weather-icon{
+        display: none;
+    }
+}
