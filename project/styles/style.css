@@ -1,0 +1,100 @@
+/* styles/style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f9ff;
+}
+
+header {
+    background-color: #2a7fba;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #2a7fba;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Color Swatches */
+.color-swatch {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+}
+
+.primary-swatch {
+    background-color: #2a7fba;
+    color: white;
+}
+
+.secondary-swatch {
+    background-color: #5fb0e8;
+    color: #333;
+}
+
+.background-swatch {
+    background-color: #f5f9ff;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+/* Typography */
+.font-sample {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #2a7fba;
+}
+
+.primary-font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Wireframes */
+.wireframe {
+    background-color: #eee;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.wireframe pre {
+    font-family: monospace;
+    white-space: pre-wrap;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px dashed #2a7fba;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+}
