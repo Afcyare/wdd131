@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydration Tips</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="HydrateMe Logo" width="150" height="60">
+        <nav>
+            <button id="menu-button" aria-expanded="false" aria-controls="main-nav">☰</button>
+            <ul id="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tracker.html">Tracker</a></li>
+                <li><a href="tips.html" aria-current="page">Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tips-container">
+            <h1>Hydration Tips</h1>
+            
+            <article class="tip-card">
+                <h2>Start Your Day Right</h2>
+                <img src="images/water-glass.webp" alt="Glass of water" loading="lazy" width="400" height="300">
+                <p>Drink a glass of water first thing in the morning to kickstart your hydration.</p>
+            </article>
+            
+            <article class="tip-card">
+                <h2>Set Reminders</h2>
+                <p>Use our tracker to set reminders throughout your day to drink water regularly.</p>
+            </article>
+            
+            <article class="tip-card">
+                <h2>Eat Water-Rich Foods</h2>
+                <p>Foods like cucumbers, watermelon, and oranges can contribute to your daily water intake.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> HydrateMe | <a href="references.html">References</a></p>
+    </footer>
+
+    <script src="scripts/tracker.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+:root {
+    --primary-blue: #2a7fba;
+    --secondary-blue: #5fb0e8;
+    --background: #f5f9ff;
+    --text-dark: #333;
+    --text-light: #fff;
+    --success-green: #4CAF50;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+nav a:hover, nav a:focus {
+    background-color: var(--secondary-blue);
+    outline: none;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: none;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 2px;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover, .cta-button:focus {
+    background-color: var(--secondary-blue);
+    outline: none;
+}
+
+.tip-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+.tip-card img{
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 6px;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+button:not(#menu-button) {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background-color 0.2s;
+}
+
+button:not(#menu-button):hover, button:not(#menu-button):focus {
+    background-color: var(--secondary-blue);
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+#result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+}
+
+footer a {
+    color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+    #menu-button {
+        display: block;
+    }
+    
+   #main-nav {
+        display: none;
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        background-color: var(--primary-blue);
+        width: 200px;
+        padding: 1rem;
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+    
+    #main-nav[aria-expanded="true"] {
+        display: block;
+        right: 0;
+    }
+    
+    #main-nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #menu-button {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--text-light);
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+@media print {
+  nav, .water-buttons {
+    display: none;
+  }
+  
+  .progress-circle {
+    break-inside: avoid;
+  }
+}

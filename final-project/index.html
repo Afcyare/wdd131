@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Farhan A.mohamud">
+    <meta name="description" content="Track your daily water intake with HydrateMe">    <meta http-equiv="Strict-Transport-Security" content="max-age=63072000">
+    <title>HydrateMe - Stay Hydrated</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preload" href="images/water-glass.webp" as="image" fetchpriority="high">
+</head>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="HydrateMe Logo" width="150" height="60" loading="eager"decoding="async">
+        <nav>
+            <button id="menu-button" aria-expanded="false" aria-controls="main-nav" aria-label="Menu">☰</button>
+            <ul id="main-nav">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="tracker.html">Tracker</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Stay Hydrated, Stay Healthy</h1>
+            <p>Calculate your daily water needs and track your intake</p>
+            <a href="tracker.html" class="cta-button">Start Tracking</a>
+        </section>
+
+        <section class="calculator">
+            <h2>Calculate Your Daily Needs</h2>
+            <form id="water-calculator">
+                <label for="weight">Your Weight (kg):</label>
+                <input type="number" id="weight" name="weight" required min="30" max="200">
+                
+                <label for="activity">Activity Level:</label>
+                <select id="activity" name="activity" required>
+                    <option value="1.2">Sedentary</option>
+                    <option value="1.375">Lightly Active</option>
+                    <option value="1.55">Moderately Active</option>
+                    <option value="1.725">Very Active</option>
+                </select>
+                
+                <button type="submit">Calculate</button>
+            </form>
+            <div id="result" class="hidden"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> HydrateMe | <a href="references.html">References</a></p>
+    </footer>
+
+    <script src="scripts/tracker.js" defer></script>
+</body>
+</html>
