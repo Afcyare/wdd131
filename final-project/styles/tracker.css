@@ -12,6 +12,10 @@
     margin: 2rem 0;
 }
 
+li span{
+   font-size:  1.5rem;
+}
+
 @media (min-width: 768px) {
     .progress-container {
         flex-direction: column;
